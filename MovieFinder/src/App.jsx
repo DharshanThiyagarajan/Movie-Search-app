@@ -8,13 +8,6 @@ function App() {
   // Default movies to show before any search
   const defaultMovies = [
     {
-      imdbID: "tt2180339",
-      Title: "Billa",
-      Year: "2009",
-      Poster: "https://images-na.ssl-images-amazon.com/images/I/81spQukSc5L._RI_.jpg",
-      Genre: "Action, Crime"
-    },
-    {
       imdbID: "tt0241527",
       Title: "Harry Potter and the Sorcerer's Stone",
       Year: "2001",
@@ -41,13 +34,6 @@ function App() {
       Year: "2022",
       Poster: "https://m.media-amazon.com/images/M/MV5BMWEwNjhkYzYtNjgzYy00YTY2LThjYWYtYzViMGJkZTI4Y2MyXkEyXkFqcGdeQXVyNTM0OTY1OQ@@._V1_SX300.jpg",
       Genre: "Action, Adventure"
-    },
-    {
-      imdbID: "tt0848228",
-      Title: "The Avengers",
-      Year: "2012",
-      Poster: "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
-      Genre: "Action, Adventure, Sci-Fi"
     },
     {
       imdbID: "tt0848228",
