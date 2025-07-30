@@ -10,10 +10,10 @@ app.use(bodyParser.json());
 
 // Database connection
 const pool = mysql.createPool({
-  host: process.env.DB_HOST || 'localhost',
-  user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || 'Dharshibu@2311',
-  database: process.env.DB_NAME || 'dharsh'
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER ,
+  password: process.env.DB_PASSWORD ,
+  database: process.env.DB_NAME 
 });
 
 // Create movies table if not exists

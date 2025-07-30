@@ -19,6 +19,8 @@ const MovieSearch = ({ movies, setMovies, searched, setSearched, defaultMovies }
   const [error, setError] = useState('');
 
   const API_KEY = import.meta.env.VITE_OMDB_API_KEY;
+  const API_BASE_URL = 'https://movie-search-app-2xtz.onrender.com';
+
 
   const searchMovies = async () => {
     if (!query.trim()) {
@@ -62,7 +64,7 @@ const MovieSearch = ({ movies, setMovies, searched, setSearched, defaultMovies }
 
   const addFavorite = async (movie) => {
     try {
-      await axios.post('/api/favorites', {
+      await axios.post(`${API_BASE_URL}/api/favorites`, {
         imdbID: movie.imdbID,
         title: movie.Title,
         year: movie.Year,
